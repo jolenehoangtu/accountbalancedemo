@@ -1,4 +1,4 @@
-.balance {
+.default {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 0rem;
@@ -8,5 +8,29 @@
   font-weight: bold;
   padding: 1rem;
   background-color: rgb(255, 228, 179);
+  border-radius: 2rem;
+}
+.green {
+  background-color: rgb(159, 215, 159);
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  width: 80rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.red {
+  background-color: rgb(235, 136, 136);
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 0rem;
+  width: 80rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
   border-radius: 2rem;
 }

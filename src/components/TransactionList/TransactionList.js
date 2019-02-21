@@ -24,24 +24,18 @@ const TransactionList = ({
       intPart = `${intPart.substring(
         0,
         intPart.length - 6
-      )},${intPart.substring(
+      )} ${intPart.substring(
         intPart.length - 6,
         intPart.length - 3
-      )},${intPart.substring(intPart.length - 3, intPart.length)}`;
+      )} ${intPart.substring(intPart.length - 3, intPart.length)}`;
     } else if (intPart.length > 3) {
       intPart = `${intPart.substring(
         0,
         intPart.length - 3
-      )},${intPart.substring(intPart.length - 3, intPart.length)}`;
+      )} ${intPart.substring(intPart.length - 3, intPart.length)}`;
     }
     decimalPart = numSplit[1];
-
-    type === "income" ? (sign = "+") : (sign = "-");
-
-    num > 0
-      ? (result = `${sign} ${intPart}.${decimalPart}`)
-      : (result = `${intPart}.${decimalPart}`);
-    return result;
+    return (result = `${intPart}.${decimalPart}`);
   };
 
   return (
@@ -58,7 +52,7 @@ const TransactionList = ({
                     idItems={`income-${income.id}`}
                     dateItems={`${income.date}`}
                     descriptionItems={income.description}
-                    amountItems={`${formatNumber(income.amount, "income")} €`}
+                    amountItems={`+${formatNumber(income.amount, "income")} €`}
                     deleteItemItems={deleteItemApp}
                   />
                 );
@@ -68,7 +62,7 @@ const TransactionList = ({
             <div className="total">
               <p>Total income: </p>
               <p className="">
-                {`${formatNumber(totalIncomeApp, "income")} €`}
+                {`+${formatNumber(totalIncomeApp, "income")} €`}
               </p>
             </div>
           </div>
@@ -83,7 +77,10 @@ const TransactionList = ({
                     idItems={`expense-${expense.id}`}
                     dateItems={`${expense.date}`}
                     descriptionItems={expense.description}
-                    amountItems={`${formatNumber(expense.amount, "expense")} €`}
+                    amountItems={`-${formatNumber(
+                      expense.amount,
+                      "expense"
+                    )} €`}
                     deleteItemItems={deleteItemApp}
                   />
                 );
@@ -93,7 +90,7 @@ const TransactionList = ({
             <div className="total">
               <p>Total expenses: </p>
               <p className="">
-                {`${formatNumber(totalExpensesApp, "expense")} €`}
+                {`-${formatNumber(totalExpensesApp, "expense")} €`}
               </p>
             </div>
           </div>

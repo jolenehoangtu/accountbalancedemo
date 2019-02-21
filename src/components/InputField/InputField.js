@@ -2,7 +2,7 @@ import React from "react";
 
 import "./InputField.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlusCircle, lg } from "@fortawesome/free-solid-svg-icons";
+import { faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
 const InputField = ({
   selectChangeApp,
