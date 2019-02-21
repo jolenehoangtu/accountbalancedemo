@@ -11,8 +11,7 @@ const TransactionList = ({
   deleteItemApp
 }) => {
   const formatNumber = (num, type) => {
-    let numSplit, intPart, decimalPart, sign, result;
-
+    let numSplit, intPart, decimalPart;
     num = Math.abs(num);
     num = num.toFixed(2);
 
@@ -35,9 +34,9 @@ const TransactionList = ({
       )} ${intPart.substring(intPart.length - 3, intPart.length)}`;
     }
     decimalPart = numSplit[1];
-    return (result = `${intPart}.${decimalPart}`);
+    return `${intPart}.${decimalPart}`;
   };
-
+  console.log("here", Transaction);
   return (
     <section>
       <div className="container js-event-delagation">
