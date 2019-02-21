@@ -1,0 +1,17 @@
+.transaction {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-size: 1.3rem;
+  margin: 2rem;
+  align-items: center;
+  border-bottom: 1px solid rgb(179, 178, 178);
+}
+.btn {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.icon-delete {
+  font-size: 1.5rem;
+  color: red;
+}

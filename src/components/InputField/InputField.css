@@ -1,0 +1,31 @@
+* {
+  margin: 0.5rem;
+}
+.InputField-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.selectOption {
+  width: 10rem;
+  height: 3.4rem;
+  border: 1px solid grey;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.description {
+  width: 15rem;
+  height: 3rem;
+  border: 1px solid grey;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.btn {
+  border: none;
+}
+.icon {
+  font-size: 3.6rem;
+  color: rgb(52, 208, 52);
+}

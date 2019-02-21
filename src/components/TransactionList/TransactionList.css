@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Income-wrapper {
+  width: 40rem;
+  border: 3px solid rgb(142, 223, 142);
+}
+
+.Expense-wrapper {
+  width: 40rem;
+  border: 3px solid rgb(176, 81, 81);
+}
+.title-income {
+  background-color: rgb(142, 223, 142);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.title-expense {
+  background-color: rgb(176, 81, 81);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.total {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem;
+}
