@@ -1,6 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+Basic account tracking application in ReactJS, which hepls to track income, expense and balance. The basic features inculde adding and deleting a transaction (income or expense), the account balance turns green when income is more, and turns red when expense is more. 
 
-## Available Scripts
+## Demo: https://account-tracking.netlify.com/
+
+
 
 In the project directory, you can run:
 
