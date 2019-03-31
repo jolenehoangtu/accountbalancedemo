@@ -8,7 +8,7 @@ Basic account tracking application in ReactJS, which hepls to track income, expe
 
 
 ## Implementation with React
-* git clone https://github.com/jolenehoangtu/accountbalancedemo
+* git clone https://github.com/jolenehoangtu/accountbalancedemo.git
 * cd todolist
 * yarn install
 * yarn start
